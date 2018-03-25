@@ -1,0 +1,52 @@
+<html>
+    <head>
+
+            <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+        <script src='main.js'></script>
+        <script src='html2canvas.js'></script>
+       
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id='input-panel'>
+                <strong>Choose your image:</strong><input id='img-input'type="file">
+                <div class="range-slider">
+                    <input class="range-slider__range" type="range" value="250" min="0" max="500">
+                    Width:<span class="range-slider__value" id='pwidth'>0</span>
+                </div>
+                Input Wrod:<input type="text" class='input-word'>  <button class='input-word-btn'>Input</button> 
+                <div class="range-slider">
+                    <input class=" range-slider__range" type="range" value="0" min="-500" max="500">
+                    Word Y:<span class=" range-slider__value" id='wtop'>0</span>
+                </div>
+                    
+                <div class="range-slider">
+                    <input class=" range-slider__range" type="range" value="0" min="0" max="500">
+                    Word X:<span class=" range-slider__value" id='wleft'>0</span>
+                </div> 
+
+                <div class="range-slider">
+                    <input class=" range-slider__range" type="range" value="10" min="1" max="50">
+                    Word Size:<span class=" range-slider__value" id='wsize'>0</span>
+                </div> 
+                <button type='button' class='btn' style='margin-left:20px;'>capture</button>
+        </div>
+       
+    
+        <div id='main'>
+            <div id='capture'>
+                <div class='container'>  
+                   <div class='image'></div>
+                    
+                    <div class='word'></div>
+                </div>
+              
+            </div>
+
+            
+        </div>
+    </body>
+</html>

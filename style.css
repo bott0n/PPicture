@@ -1,0 +1,56 @@
+#main{
+    width:100%;
+   height:500px;
+}
+
+
+.container{
+    width:250px;
+    margin:50px auto;
+}
+
+img{
+   width:100%;
+}
+.word{
+
+    color:red;    
+    position: relative;
+    top:-50px;
+    font-size:30px;
+
+
+}
+#input-panel{
+    border:black 5px solid;
+    position: fixed;
+}
+#input-panel>*{
+    padding:20px;
+}
+.range-slider {
+
+    width:100px;
+  }
+  
+  .range-slider__range {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 10px;
+    
+    border-radius: 5px;
+    background:skyblue;
+    outline: none;
+    padding: 0;
+    margin: 0;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    position: relative;    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+    width:20px;
+    height: 20px;
+    background:blue;
+    border-radius:50%;
+  
+  }
+
