@@ -36,6 +36,10 @@ $(function(){
         $('.word').text($('.input-word').val())
     })
 
+    $('.input-color-btn').on('click',function(){
+        $('.word').css('color',$('.input-color').val())
+    })
+
 //silder
       
       var rangeSlider = function(){
