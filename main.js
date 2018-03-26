@@ -10,7 +10,7 @@ $(function(){
 
     // capture
     $('.btn').on('click',function(){
-        html2canvas(document.querySelector("#capture")).then(canvas => {
+        html2canvas(document.querySelector(".container")).then(canvas => {
             document.body.appendChild(canvas)
         }).then(()=>{
             $('canvas').attr('id','canvas')
@@ -59,6 +59,7 @@ $(function(){
           range.on('input', function(){
             $(this).next(value).html(this.value);
             $('.container').css('width',$('#pwidth').html()+'px')
+            $('.container').css('height',$('img').css('height'))
             $('.word').css('top',$('#wtop').html())
             $('.word').css('left',$('#wleft').html())
             $('.word').css('font-size',$('#wsize').html()+'px')

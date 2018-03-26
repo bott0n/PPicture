@@ -1,4 +1,4 @@
-# PPicture
+# PPicture (Only for PC)
 You can p your picture 
 # Website
 https://jacky2001114.github.io/PPicture/

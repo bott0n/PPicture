@@ -3,7 +3,10 @@
    height:500px;
 }
 
-
+#capture{
+    margin-top:400px;
+    margin-left:300px;
+}
 .container{
     width:250px;
     margin:50px auto;
