@@ -7,7 +7,14 @@ $(function(){
     var pwidth = 250+'px';
     var pheight = 250+'px';
     
-
+    window.onload = function(){
+        $('img').css('width',$('#pwidth').html()+'px')
+        $('.container').css('width',$('img').css('width'))
+        $('.container').css('height',$('img').css('height'))
+        $('.word').css('top',$('#wtop').html())
+        $('.word').css('left',$('#wleft').html())
+        $('.word').css('font-size',$('#wsize').html()+'px')
+    }
     // capture
     $('.btn').on('click',function(){
         html2canvas(document.querySelector(".container")).then(canvas => {
@@ -58,7 +65,8 @@ $(function(){
       
           range.on('input', function(){
             $(this).next(value).html(this.value);
-            $('.container').css('width',$('#pwidth').html()+'px')
+            $('img').css('width',$('#pwidth').html()+'px')
+            $('.container').css('width',$('img').css('width'))
             $('.container').css('height',$('img').css('height'))
             $('.word').css('top',$('#wtop').html())
             $('.word').css('left',$('#wleft').html())
